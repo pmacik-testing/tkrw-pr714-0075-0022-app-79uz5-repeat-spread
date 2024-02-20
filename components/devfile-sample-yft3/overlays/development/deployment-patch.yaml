@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-yft3
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0022-tenant/tkrw-pr714-0075-0022-app/devfile-sample-yft3@sha256:f7b8423c5f077f571ab50961dfa28d78ab9a1606793d2751c25c2d8d15c44d6c
+        name: my-nodejs
+        resources: {}
+status: {}
